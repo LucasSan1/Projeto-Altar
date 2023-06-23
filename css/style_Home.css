@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #8e7e61;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 1.6%;
+    margin-right: 3%;
+    font-family: 'Poppins';
+    font-size: 120%;
+}
+
+header img {
+    width: 8%;
+}
+
+/* Apresentaçao e foto */
+#altar img{
+    width: 100%;
+    height: 25pc;
+    object-fit: none;
+    object-position: center;
+}
+
+#altar p {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    color: white;
+    font-size: 120px;
+    font-family: 'Katibeh', cursive;
+    text-align: right;     
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+
+/* cardapio*/
+#cardapio {
+    background-color: #65C9AC;
+    margin: 4% 25% 0% 30%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', cursive;
+    border-radius: 20px;
+    box-shadow: 6px 6px 8px rgba(101, 201, 182, 0.8);
+}
+
+#cardapio a {
+    text-decoration: none;
+    color: white;
+}
+
+.tags {
+    width: 15%;
+    float: left;
+    margin: 5% 5% 0% 5%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+    font-size: 18px;
+    background-color: #65C9AC;
+    color: white;
+    box-shadow: 6px 6px 8px rgba(101, 201, 182, 0.8);
+}
+
+
+/* dropdown */
+.tags {
+    position: relative;
+    height: 2pc;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -60px;
+    background-color: #65C9AC;
+    width: 20pc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center; 
+    border-radius: 10%;
+}
+
+.dropdown img {
+    margin-top: 1pc;
+    margin-left: 15px;
+    margin-bottom: 2pc;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#space {
+    position: relative;
+    left: -8px;
+    width: 180px;
+}
+
+.spaceS {
+    position: relative;
+    top: -5px;
+    left: -6px;
+}
+
+#spaceD {
+    position: relative;
+    left: -22px;
+}
+
+#spaceB1 {
+    position: relative;
+    top: -5px;
+    left: -9px;
+}
+
+#spaceB2 {
+    position: relative;
+    top: -5px;
+    left: -32px;
+}
+
+.dropdown a {
+    display: flex;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.dropdown p {
+    margin-top: 2pc;
+    margin-left: 15px;
+}
+
+.tags:hover .dropdown {
+    display: block;
+}
+
+.tags:hover  {
+    background-color: #3daa8b;
+}
+
+/* style do footer */
+footer {
+    position: absolute;
+    top: 55pc;
+    width: 100%;
+    height: 10pc;
+    background-color: #65C9AC;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#endereco {
+    float: left;
+    margin-top: 4%;
+    margin-left: 3%;
+    width: 38%;
+}
+
+#endereco a {
+    text-decoration: none;
+    color: white;
+}
+
+#telefone {
+    float: right;
+    margin-top: 4%;
+    width: 30%;
+}
+
+#insta{
+    float: right;
+    margin-top: 1%;
+    width: 30%;
+}
+
+#insta a {
+    text-decoration: none;
+    color: white;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    header img {
+        width: 12%;
+    }
+
+    header a {
+        padding: 1%;
+        font-size: 100%;
+    }
+
+    #altar p {
+        font-size: 80px;
+    }
+
+    #cardapio {
+        margin: 4% 10% 0% 10%;
+        font-size: 20px;
+    }
+
+    .tags {
+        width: 30%;
+        margin: 5% 2% 0% 2%;
+        font-size: 16px;
+    }
+
+    .dropdown {
+        left: -80px;
+        width: 30pc;
+    }
+
+    .dropdown img {
+        margin-top: 1pc;
+        margin-left: 10px;
+        margin-bottom: 1pc;
+        width: 50px;
+    }
+
+    #space {
+        width: 130px;
+    }
+
+    .spaceS {
+        top: -10px;
+        left: -4px;
+    }
+
+    #spaceD {
+        left: -30px;
+    }
+
+    #spaceB1 {
+        top: -5px;
+        left: -9px;
+    }
+
+    #spaceB2 {
+        top: -5px;
+        left: -28px;
+    }
+
+    .dropdown p {
+        margin-top: 1pc;
+        margin-left: 10px;
+    }
+
+    footer {
+        top: 85pc;
+        height: auto;
+    }
+
+    #endereco {
+        width: 50%;
+    }
+
+    #telefone {
+        width: 50%;
+        text-align: right;
+    }
+
+    #insta {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    header a {
+        font-size: 100%;
+        padding: 1%;
+    }
+
+    header img {
+        width: 12%;
+    }
+
+    #altar p {
+        font-size: 80px;
+    }
+
+    #cardapio {
+        margin: 4% 15% 0% 20%;
+        font-size: 18px;
+    }
+
+    .tags {
+        width: 40%;
+        margin: 5% 5% 0% 5%;
+        font-size: 14px;
+    }
+
+    .dropdown {
+        left: -40px;
+        width: 10pc;
+    }
+
+    .dropdown img {
+        width: 40px;
+    }
+
+    #space {
+        left: -4px;
+        width: 120px;
+    }
+
+    .spaceS {
+        top: -3px;
+        left: -3px;
+    }
+
+    #spaceD {
+        left: -11px;
+    }
+
+    #spaceB1 {
+        top: -3px;
+        left: -4px;
+    }
+
+    #spaceB2 {
+        top: -3px;
+        left: -15px;
+    }
+
+    .dropdown p {
+        margin-top: 1pc;
+    }
+
+    footer {
+        top: 70pc;
+        font-size: 16px;
+    }
+
+    #endereco {
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 48%;
+    }
+
+    #telefone {
+        margin-top: 2%;
+        width: 45%;
+    }
+
+    #insta {
+        margin-top: 1%;
+        width: 45%;
+    }
+}

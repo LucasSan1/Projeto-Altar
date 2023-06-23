@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    background-color: #F5A925;
+}
+
+img {
+    position: relative;
+    left: 40%;
+    width: 18%;
+    color: white;
+}
+
+/* TITULO CARDAPIO */
+h1{
+    display: flex;
+    width: 300px;
+    color: white;
+    margin-left: auto;
+    align-items: center;
+    margin-right: auto;
+    justify-content: center;
+    font-family: Katibeh, sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+    background-color: #65C9AC;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px #5BB69C;
+    font-weight: bold;
+}
+
+/* CONTEUDO CARDAPIO */
+h2 {
+    color: white;
+    font-weight: normal;
+    font-family: Katibeh, sans-serif;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    font-size: 40px;
+    background-color: #65C9AC;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px #5BB69C;
+
+}
+
+.pratos{
+    display: flex;
+}
+
+.pratos div{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px 300px;
+    background-color: #8E7E61;
+    margin-left: 120px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.pratos .foto_comida{
+    margin: 10px 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.nome_prato {
+    color: white;
+    width: 300px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 140px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 10pc;
+    margin-top: 50px;
+    background-color: #F5A925;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#endereco {
+    float: left;
+    margin-top: 4%;
+    margin-left: 3%;
+    width: 38%;
+}
+
+#endereco a {
+    text-decoration: none;
+    color: white;
+}
+
+#telefone {
+    float: right;
+    margin-top: 4%;
+    width: 30%;
+}
+
+#insta{
+    float: right;
+    margin-top: 1%;
+    width: 30%;
+}
+
+#insta a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .pratos{
+        display: block;
+    }
+
+    #telefone{
+        float: left;
+        margin-left: 20%;
+    }
+
+    #insta{
+        float: left;
+        margin-left: 20%;
+    }
+}
+
+
+@media screen and (min-width:400px) and (max-width: 767px){
+    .pratos{
+        display: block;
+        margin-left: 0px;
+    }
+
+    .pratos div{
+        display: grid;
+        grid-template-columns: 40px 400px;
+        grid-template-rows: 1fr;
+        margin-left: 20px;
+    }
+
+    .nome_prato{
+        margin-left: 140px;
+    }
+
+    footer{
+        height: 15pc;
+        width: fit-content;
+    }
+
+    #telefone{
+        float: left;
+        margin-left: 9%;
+    }
+    
+    #insta{
+        float: left;
+        margin-top: 0%;
+        margin-left: 9%;
+    }
+}

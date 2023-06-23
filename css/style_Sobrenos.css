@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    background-color: #65C9AC;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+img {
+    position: relative;
+    left: 40%;
+    width: 20%;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Katibeh', cursive;
+    font-size: 80px;
+    color: #5C503C;
+    margin: 0.5%;
+    position: relative;
+    top: -25px;
+}
+
+#caixaTexto {
+   background-color: #F5A925;
+   color: white;
+   font-family: 'Poppins';
+   font-size: 25px;
+   padding: 2%;
+   margin: 0% 5% 0% 6%;
+   width: 65pc;
+   height: 20pc;
+   border-radius: 10px;
+   position: relative;
+   top: -20px;
+   box-shadow:  8px 8px 0px rgba(211, 144, 28, 1);
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    img {
+        left: 30%;
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 40px;
+        top: -15px;
+    }
+
+    #caixaTexto {
+        font-size: 18px;
+        margin: 0% 2% 0% 2%;
+        width: 90%;
+        height: auto;
+        top: -15px;
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        left: 20%;
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 30px;
+        top: -10px;
+    }
+
+    #caixaTexto {
+        font-size: 16px;
+        margin: 0% 2% 0% 2%;
+        width: 90%;
+        height: auto;
+        top: -10px;
+    }
+}

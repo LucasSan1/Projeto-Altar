@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo-original.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style_reservas.css">
+    <title>Reserve sua mesa</title>
+</head>
+<body>
+    <a href="index.html">
+        <img src="imgs/logo sem o fundo.png" alt="Logo">
+    </a>
+
+    <div id="reserva">
+        Faça sua reserva
+    </div>
+
+    <div id="container">
+        <form onsubmit="abrirPopUp(); return false;">
+          <div class="campoForm">
+            <label for="dia_da_reserva">Dia da Reserva</label>
+            <input type="date" id="dia_da_reserva">
+            <div class="seta" onclick="MostrarCampos(this)">&#9660;</div>
+          </div>
+    
+          <div class="campoForm">
+            <label for="numeroP">Número de Pessoas</label>
+            <input type="number" id="numeroP">
+            <div class="seta" onclick="MostrarCampos(this)">&#9660;</div>
+          </div>
+    
+          <div class="campoForm">
+            <label for="horario">Horário</label>
+            <input type="time" id="horario">
+            <div class="seta" onclick="MostrarCampos(this)">&#9660;</div>
+          </div>
+    
+          <div class="campoForm">
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" placeholder="(Aniversarios ou outras ocasioes especiais)"></textarea>
+            <div class="seta" onclick="MostrarCampos(this)">&#9660;</div>
+          </div>
+    
+          <button id="botao">Enviar</button>
+        </form>
+      </div>
+      
+      <div id="popup">
+          <p>Reserva Realizada com sucesso!!</p>
+          <button id="botaoPop" onclick="fecharPopUp()">Fechar</button>
+      </div>
+
+      <script src="js/Forms.js"></script>
+</body>
+</html>
